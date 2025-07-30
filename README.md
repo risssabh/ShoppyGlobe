@@ -42,8 +42,8 @@ npm install
 4️⃣ Start the development server
 ```
 npm run dev
-The project will start at http://localhost:5173 by default.
 ```
+The project will start at http://localhost:5173 by default.
 
 5️⃣ Build for production (optional)
 ```
