@@ -28,7 +28,7 @@
     font-weight: 700;
   }
   
-  .btn { /* ensure no borders on remove button */
+  .btn { 
     border: none;
   }
   

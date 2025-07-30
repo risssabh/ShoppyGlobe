@@ -2,10 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './RatingStars.css';
 
-/**
- * Displays 0–5 stars based on the numeric rating (0–5).
- * Rounds to the nearest half for a nicer look.
- */
+/*Displays 0–5 stars based on the numeric rating (0–5).*/
 const RatingStars = ({ rating, size = 'md' }) => {
   const rounded = Math.round((Number(rating) || 0) * 2) / 2;
   const stars = [1, 2, 3, 4, 5].map(i => {

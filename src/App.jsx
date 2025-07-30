@@ -2,7 +2,6 @@ import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header.jsx';
 
-// Code splitting (lazy loading) for pages:
 const ProductList = lazy(() => import('./pages/ProductList.jsx'));
 const ProductDetail = lazy(() => import('./pages/ProductDetail.jsx'));
 const Cart = lazy(() => import('./pages/Cart.jsx'));
@@ -13,7 +12,6 @@ const App = () => {
   return (
     <>
       <Header />
-      {/* Suspense fallback shown while lazy components load */}
       <Suspense fallback={<div className="container"><p>Loading...</p></div>}>
         <Routes>
           <Route path="/" element={<ProductList />} />

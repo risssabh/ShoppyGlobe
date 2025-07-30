@@ -1,15 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-/**
- * Cart item shape:
- * {
- *   id, title, price, thumbnail,
- *   quantity
- * }
- */
-
 const initialState = {
-  items: [] // array of cart items
+  items: [] 
 };
 
 const cartSlice = createSlice({
@@ -54,7 +46,6 @@ const cartSlice = createSlice({
 
 export const { addToCart, removeFromCart, updateQuantity, clearCart } = cartSlice.actions;
 
-// Selectors (for header badge and totals)
 export const selectCartItems = (state) => state.cart.items;
 export const selectCartCount = (state) => state.cart.items.reduce((sum, i) => sum + i.quantity, 0);
 export const selectCartTotal = (state) =>

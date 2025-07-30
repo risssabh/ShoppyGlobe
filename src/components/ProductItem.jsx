@@ -6,9 +6,6 @@ import { addToCart } from '../store/cartSlice';
 import RatingStars from './RatingStars';
 import './ProductItem.css';
 
-/**
- * ProductItem shows brand, title, price, and customer rating.
- */
 const ProductItem = ({ product }) => {
   const dispatch = useDispatch();
 

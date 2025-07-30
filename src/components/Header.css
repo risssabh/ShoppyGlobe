@@ -8,16 +8,14 @@
     border-bottom: 1px solid #0b1220;
   }
   
-  /* Wider + taller nav bar: more vertical padding for space above/below links */
   .header__inner {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 16px;
-    padding: 20px 0; /* increased vertical space */
+    padding: 20px 0; 
   }
   
-  /* Brand with 🛍️ icon */
   .brand {
     display: inline-flex;
     align-items: center;
@@ -42,12 +40,11 @@
     gap: 2rem;
   }
   
-  /* Clean links: no underlines or bottom borders, padded for vertical room */
   .nav__link {
     color: #e5e7eb;
-    text-decoration: none; /* remove underline */
+    text-decoration: none; 
     font-weight: 600;
-    padding: 10px 14px;    /* vertical padding */
+    padding: 10px 14px;    
     border-radius: 8px;
     transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
   }
@@ -61,11 +58,10 @@
     transform: translateY(-1px);
   }
   
-  /* Cart (always visible) */
   .cart {
     position: relative;
     color: #fff;
-    text-decoration: none; /* no underline */
+    text-decoration: none; 
     font-size: 1.45rem;
     line-height: 1;
   }
@@ -85,11 +81,12 @@
   }
   
   /* Mobile: hamburger toggle is visible, nav becomes a dropdown panel */
+
   .menu-toggle {
-    display: none; /* hidden on laptop/desktop */
+    display: none; 
     width: 44px;
     height: 40px;
-    border: none;              /* remove lines from button */
+    border: none;            
     background: #1f2937;
     border-radius: 8px;
     cursor: pointer;
@@ -118,7 +115,6 @@
       justify-content: center;
     }
   
-    /* Turn the nav into an overlay panel under the header */
     .nav {
       position: absolute;
       left: 0;
@@ -126,7 +122,7 @@
       top: 100%;
       background: #0f172a;
       border-bottom: 1px solid #182036;
-      display: none; /* collapsed by default */
+      display: none;
       flex-direction: column;
       align-items: stretch;
       gap: 0;
@@ -135,7 +131,7 @@
     .nav--open { display: flex; }
   
     .nav__link {
-      padding: 14px 20px; /* comfy vertical padding on mobile */
+      padding: 14px 20px;
       border-radius: 0;
     }
   }

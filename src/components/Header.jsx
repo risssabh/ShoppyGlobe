@@ -14,7 +14,6 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container header__inner">
-        {/* Brand with 🛍️ logo */}
         <Link to="/" className="brand" onClick={closeMenu}>
           <span className="brand__logo" aria-hidden>🛍️</span>
           <span className="brand__text">ShoppyGlobe</span>

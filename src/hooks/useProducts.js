@@ -1,12 +1,8 @@
 import { useEffect, useState } from 'react';
 
-/**
- * Custom hook to fetch products list from API using useEffect.
- * Handles loading and error states. Also returns a refetch function.
- */
 export default function useProducts() {
-  const [data, setData] = useState([]);        // products array
-  const [loading, setLoading] = useState(true); // boolean
+  const [data, setData] = useState([]);        
+  const [loading, setLoading] = useState(true); 
   const [error, setError] = useState(null);     // error message or null
 
   const fetchProducts = async (signal) => {
@@ -29,7 +25,6 @@ export default function useProducts() {
   useEffect(() => {
     const controller = new AbortController();
     fetchProducts(controller.signal);
-    // cleanup aborts on unmount
     return () => controller.abort();
   }, []);
 

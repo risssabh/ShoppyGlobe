@@ -2,7 +2,7 @@
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    color: #f59e0b; /* amber-like */
+    color: #f59e0b; 
   }
   .star { line-height: 1; }
   .stars__text {

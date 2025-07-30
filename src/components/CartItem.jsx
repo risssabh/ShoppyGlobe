@@ -4,9 +4,6 @@ import { useDispatch } from 'react-redux';
 import { removeFromCart, updateQuantity } from '../store/cartSlice';
 import './CartItem.css';
 
-/**
- * CartItem is a single row in the cart with quantity controls and remove button.
- */
 const CartItem = ({ item }) => {
   const dispatch = useDispatch();
 

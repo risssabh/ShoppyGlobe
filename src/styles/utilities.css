@@ -1,4 +1,3 @@
-/* Small utility classes */
 .visually-hidden {
     position: absolute !important;
     height: 1px; width: 1px;
