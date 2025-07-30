@@ -24,7 +24,7 @@ ShoppyGlobe is a fully functional **E-commerce web application** built with **Vi
 
 ### 1️⃣ Prerequisites
 
-- [Node.js](https://nodejs.org/) (v16 or above recommended)
+- [Node.js](https://nodejs.org/)
 - [Git](https://git-scm.com/)
 
 ### 2️⃣ Clone the repository
@@ -48,5 +48,4 @@ The project will start at http://localhost:5173 by default.
 5️⃣ Build for production (optional)
 ```
 npm run build
-The built files will be in the dist/ folder.
 ```
