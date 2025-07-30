@@ -1,0 +1,75 @@
+.product-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-card__image-wrap {
+    display: block;
+    aspect-ratio: 16/10;
+    background: #f3f4f6;
+    text-decoration: none; /* no underline */
+  }
+  
+  .product-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .product-card__body {
+    padding: 12px;
+  }
+  
+  .product-card__brand {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  
+  .product-card__title {
+    margin: 0 0 6px 0;
+    font-size: 1rem;
+  }
+  
+  .product-card__meta {
+    margin-bottom: 8px;
+  }
+  
+  .product-card__price {
+    margin: 0 0 12px 0;
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+  
+  .product-card__actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Clean buttons: no lines/borders for normal button */
+  .btn {
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn:hover { filter: brightness(0.95); }
+  
+  /* Link-styled button without underline or border lines */
+  .btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none; /* no underline */
+    color: #2563eb;
+    padding: 10px 0;
+  }
+  .btn-link:hover { text-decoration: underline; }
+  

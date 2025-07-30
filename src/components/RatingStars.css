@@ -1,0 +1,17 @@
+.stars {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #f59e0b; /* amber-like */
+  }
+  .star { line-height: 1; }
+  .stars__text {
+    color: #374151;
+    font-size: 0.9em;
+    margin-left: 4px;
+  }
+  
+  .stars--sm .star { font-size: 0.9rem; }
+  .stars--md .star { font-size: 1.1rem; }
+  .stars--lg .star { font-size: 1.3rem; }
+  
